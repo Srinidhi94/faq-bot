@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@google/maps": "^0.4.5",
+    "adaptivecards": "^1.0.0-beta9",
+    "axios": "^0.17.1",
+    "body-parser": "~1.18.2",
+    "botbuilder": "^3.13.1",
+    "botbuilder-cognitiveservices": "^1.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv-extended": "^2.0.1",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
