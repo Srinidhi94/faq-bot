@@ -77,20 +77,20 @@ if (process.env.IS_SPELL_CORRECTION_ENABLED === 'true') {
 }
 /* DO NOT MODIFY */
 // Send welcome when conversation with bot is started, by initiating the root dialog
-bot.on('conversationUpdate', (message) => {
-  if (message.membersAdded) {
-    message.membersAdded.forEach((identity) => {
-      if (identity.id === message.address.bot.id) {
-        const msg = new builder.Message().address(message.address);
-        msg.data.textLocale = 'en-us';
-        msg.data.name = message.address.user.id;
-        msg.data.text = 'Hi. How can I help you today?';
-        bot.send(msg);
-        // bot.beginDialog(message.address, 'greetings:/');
-      }
-    });
-  }
-});
+// bot.on('conversationUpdate', (message) => {
+//   if (message.membersAdded) {
+//     message.membersAdded.forEach((identity) => {
+//       if (identity.id === message.address.bot.id) {
+//         const msg = new builder.Message().address(message.address);
+//         msg.data.textLocale = 'en-us';
+//         msg.data.name = message.address.user.id;
+//         msg.data.text = 'Hi. How can I help you today?';
+//         bot.send(msg);
+//         // bot.beginDialog(message.address, 'greetings:/');
+//       }
+//     });
+//   }
+// });
 
 // Enable Conversation Data persistence
 bot.set('persistConversationData', true);
